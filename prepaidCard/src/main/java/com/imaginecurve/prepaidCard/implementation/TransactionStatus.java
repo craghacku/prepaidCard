@@ -1,0 +1,14 @@
+package com.imaginecurve.prepaidCard.implementation;
+
+public enum TransactionStatus {
+	OTHER,
+	CONFIRMED,
+	PENDING,
+	INSUFFICIENT_FUNDS,
+	INSUFFICIENT_AUTHORIZATION,
+	UNAUTHORIZED,
+	CANCELLED,
+	INSUFFICIENT_FUNDS_FOR_REFUND, 
+	INSUFFICIENT_FUNDS_FOR_REVERSE
+
+}
