@@ -1,4 +1,4 @@
-package com.imaginecurve.prepaidCard.model;
+package prepaidCard.prepaidCard;
 
 import java.util.List;
 
