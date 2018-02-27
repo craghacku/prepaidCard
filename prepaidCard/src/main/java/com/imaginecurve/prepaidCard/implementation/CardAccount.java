@@ -70,7 +70,8 @@ public class CardAccount {
 	}
 	
 	public synchronized Transaction capture(Long transactionId, Double amount) {
-		if (!transactionIdToTransaction.containsKey(transactionId)) {
+		if (!transactionIdToTransaction.containsKey(transactionId)
+				|| !pendingTransactions.contains(transactionId)) {
 			return new Transaction(
 					IdGenerator.INSTANCE.generate(),
 					LocalDateTime.now(),
